@@ -1,0 +1,25 @@
+.feature {
+    padding-top: 55px;
+    padding-bottom: 130px;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 170px;
+    }
+    &-content {
+        padding-top: 45px;
+    }
+    &-list {
+        list-style: none;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        margin-bottom: 15px;
+    }
+    &-desc {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,86 @@
+.plan {
+    padding-top: 150px;
+    text-align: center;
+    background: linear-gradient(180deg, #f8f8f8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+    .button {
+        width: 100%;
+        transition: all 0.5s;
+        &:hover {
+            color: white;
+            background-color: $primary-color;
+        }
+    }
+    &-header {
+        margin: 0 auto 60px;
+        max-width: 555px;
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        margin-bottom: 150px;
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 70px;
+        border: 2px solid $gray-3;
+        border-radius: 10px;
+        transition: all 0.5s;
+        &:hover {
+            border-color: $primary-color;
+        }
+    }
+    &-item.is-active {
+        border-color: $primary-color;
+    }
+    &-image {
+        margin-bottom: 30px;
+    }
+    &-detail {
+        margin-bottom: 130px;
+        height: 150px;
+    }
+    &-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: $heading-color;
+        line-height: calc(30 / 18);
+        margin-bottom: 30px;
+    }
+    &-info {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    &-price {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: $heading-color;
+        span {
+            font-size: inherit;
+            color: $text-color;
+            font-weight: 400;
+        }
+    }
+}
+.network {
+    &-heading {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        max-width: 380px;
+        font-size: 35px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &-image {
+        max-width: 1060px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

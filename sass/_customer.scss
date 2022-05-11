@@ -1,0 +1,108 @@
+.customer {
+    margin-left: 150px;
+    margin-right: 10px;
+    .boxed {
+        margin-bottom: 60px;
+    }
+    .heading {
+        max-width: 447.81px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+    &-item {
+        height: 240px;
+        margin: 0 25px;
+        padding: 25px;
+        border: 2px solid $gray-1;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.5s;
+        &.slick-current.slick-active {
+            border-color: $primary-color;
+        }
+    }
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &-info {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+    }
+    &-name {
+        font-size: 18px;
+        font-weight: 500;
+        color: $heading-color;
+        margin-bottom: 5px;
+    }
+    &-address {
+        max-width: 109.36px;
+        font-size: 14px;
+        font-weight: 400;
+        color: $text-color;
+    }
+    &-rating {
+        display: flex;
+        align-items: flex-end;
+        gap: 0 10px;
+        span {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    &-comment {
+        font-size: 16px;
+        font-weight: 400;
+        color: $heading-color;
+    }
+
+    // slick slider
+    .slick-track {
+        display: flex;
+        padding-bottom: 60px;
+    }
+    .slick-arrow {
+        width: 60px;
+        height: 60px;
+        border-radius: 100rem;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+        z-index: 10;
+    }
+    .slick-prev {
+        border: 1px solid $primary-color;
+        background-color: transparent;
+        right: 80px;
+    }
+    .slick-next {
+        background-color: $primary-color;
+        right: 0;
+    }
+    .slick-dots {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 0 15px;
+        transform: translateY(50%);
+        button {
+            font-size: 0;
+            background-color: $gray-1;
+            width: 15px;
+            height: 15px;
+            border-radius: 100rem;
+            transition: all 0.2s linear;
+        }
+        .slick-active button {
+            background-color: $primary-color;
+            width: 45px;
+        }
+    }
+}
