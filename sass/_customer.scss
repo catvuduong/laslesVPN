@@ -1,4 +1,5 @@
 .customer {
+    display: block;
     margin-left: 150px;
     margin-right: 10px;
     .boxed {
@@ -11,7 +12,7 @@
         margin-bottom: 60px;
     }
     &-item {
-        height: 240px;
+        min-height: 240px;
         margin: 0 25px;
         padding: 25px;
         border: 2px solid $gray-1;
@@ -101,8 +102,43 @@
             transition: all 0.2s linear;
         }
         .slick-active button {
+            border-color: $primary-color;
             background-color: $primary-color;
             width: 45px;
         }
+    }
+}
+@media screen and (max-width: 1400px) {
+    .customer {
+        &-item {
+            min-height: 280px;
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .customer {
+        .slick-track {
+            padding-bottom: 20px;
+        }
+        .slick-dots {
+            justify-content: center;
+        }
+    }
+    .customer-list {
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .customer {
+        &-item {
+            min-height: 340px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .customer {
+        max-width: 1300px;
+        margin: 0 auto;
     }
 }

@@ -1,4 +1,5 @@
 .partner {
+    display: block;
     padding-top: 28px;
     &-container {
         padding: 50px 0;
@@ -7,5 +8,16 @@
         grid-gap: 60px;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .partner-container {
+        gap: 0 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .partner {
+        margin-bottom: 30px;
     }
 }
